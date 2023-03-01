@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qxe-fm-ALa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
@@ -65,7 +65,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1042.0289855072465" y="116.51785714285714"/>
+            <point key="canvasLocation" x="1952.1739130434785" y="116.51785714285714"/>
         </scene>
         <!--Starting Page-->
         <scene sceneID="5Wt-Gu-ZNi">
@@ -157,7 +157,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zhe-FP-ZCW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1740.5797101449277" y="116.51785714285714"/>
+            <point key="canvasLocation" x="2650.7246376811595" y="116.51785714285714"/>
         </scene>
         <!--First Page-->
         <scene sceneID="EnF-8A-8aq">
@@ -174,7 +174,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="myCollectionViewCell" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="EfK-uB-1S9">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="CollectionViewCell" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="EfK-uB-1S9">
                                 <rect key="frame" x="20" y="475" width="374" height="239"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -185,7 +185,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="MyCollectionViewCell" reuseIdentifier="cell" id="NrI-lM-FKN" customClass="MyCollectionViewCell">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="myCollectionViewCell" reuseIdentifier="cell" id="NrI-lM-FKN" customClass="myCollectionViewCell" customModule="game" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="8Wz-HZ-mEy">
@@ -203,7 +203,7 @@
                                             </subviews>
                                         </collectionViewCellContentView>
                                         <connections>
-                                            <outlet property="AnswerLabel" destination="mw1-v6-Gtg" id="bnW-oU-n2h"/>
+                                            <outlet property="answerLabel" destination="mw1-v6-Gtg" id="cwT-Sb-oXC"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -218,29 +218,30 @@
                     </view>
                     <connections>
                         <outlet property="QuestionLabel" destination="bbE-Cx-Ey0" id="mc6-xA-WBd"/>
+                        <outlet property="cv" destination="EfK-uB-1S9" id="cA5-4J-x7z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LT7-J5-aki" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2469.5652173913045" y="116.51785714285714"/>
+            <point key="canvasLocation" x="3379.7101449275365" y="116.51785714285714"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="TKB-z2-6UJ">
+        <scene sceneID="zEs-EC-VnE">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Qxe-fm-ALa" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4yd-TL-tJj" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dXm-FH-86Z">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Hun-kP-Ehs">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="QCi-fl-3Xf"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ueY-HC-CVg"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4bI-tK-G0j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BkX-oe-FYw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="131.8840579710145" y="116.51785714285714"/>
+            <point key="canvasLocation" x="1042.0289855072465" y="116.51785714285714"/>
         </scene>
     </scenes>
     <resources>
