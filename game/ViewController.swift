@@ -4,11 +4,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var startButtonOutlet: UIButton!
     @IBOutlet weak var pg: UIProgressView!
     var time = Timer()
     override func viewDidLoad() {
         super.viewDidLoad()
         pg.progress = 0.0
+        startButtonOutlet.layer.cornerRadius = 85
+        startButtonOutlet.layer.masksToBounds = true
     }
     @IBAction func startButtonAction(_ sender: UIButton) {
        
@@ -21,6 +24,7 @@ class ViewController: UIViewController {
 //                        print(self.pg.progress)
                         self.time.invalidate()
                         self.navigation()
+                       
                     }
                 })
 }
